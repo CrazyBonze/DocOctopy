@@ -13,7 +13,7 @@ try:
     from docstring_parser import parse
     from docstring_parser.common import DocstringStyle
 except ImportError:
-    parse = None
+    parse = None  # type: ignore
     DocstringStyle = None  # type: ignore
 
 
