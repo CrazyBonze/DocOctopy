@@ -301,6 +301,35 @@ dococtopy/
 - **Remediation Engine**: Uses DSPy for structured LLM interactions
 - **Caching System**: Incremental scanning with fingerprint-based invalidation
 
+## Publishing
+
+DocOctopy is automatically published to PyPI via GitHub Actions when a release is created.
+
+### Manual Publishing (for maintainers)
+
+1. **Update version** in `pyproject.toml`
+2. **Build and test** the package:
+
+   ```bash
+   ./scripts/publish.sh
+   ```
+
+3. **Create a GitHub release** with tag `v0.1.0` (matching the version)
+4. **GitHub Action** will automatically publish to PyPI
+
+### PyPI Setup (one-time)
+
+To enable automatic publishing, configure trusted publishing in PyPI:
+
+1. Go to [PyPI Account Settings](https://pypi.org/manage/account/)
+2. Navigate to "Publishing" → "Publishing tokens" → "Add a new pending publisher"
+3. Configure:
+   - **PyPI project name**: `dococtopy`
+   - **Owner**: `yourusername` (your GitHub username)
+   - **Repository name**: `dococtopy`
+   - **Workflow filename**: `publish.yml`
+   - **Environment name**: (leave empty)
+
 ## Contributing
 
 We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
@@ -310,8 +339,8 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ```bash
 git clone https://github.com/yourusername/dococtopy.git
 cd dococtopy
-pip install -e ".[dev]"
-pytest
+uv sync --dev
+uv run pytest
 ```
 
 ### Adding New Rules

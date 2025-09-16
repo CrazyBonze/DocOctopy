@@ -8,7 +8,11 @@ name = "dococtopy"
 version = "0.1.0"
 description = "A language-agnostic docstyle compliance & remediation tool"
 readme = "README.md"
+license = { text = "MIT" }
 requires-python = ">=3.9"
+authors = [{ name = "Michael", email = "your-email@example.com" }]
+maintainers = [{ name = "Michael", email = "your-email@example.com" }]
+keywords = ["docstring", "documentation", "linting", "compliance", "llm", "ai"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
@@ -18,6 +22,11 @@ classifiers = [
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+    "Operating System :: OS Independent",
 ]
 dependencies = [
     "ast-tools>=0.1.8",
