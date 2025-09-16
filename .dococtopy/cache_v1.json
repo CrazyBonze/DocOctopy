@@ -1,0 +1,3793 @@
+{
+  "entries": {
+    "/tmp/pytest-of-michael/pytest-27/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-27/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-27/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-28/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-28/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-29/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-29/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-30/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-30/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-31/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-31/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-32/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-32/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-33/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-33/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-34/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-34/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-35/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-35/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-36/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-36/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-37/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-37/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-38/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:9262811d573d0f7d1fd3b71c75404cf1d432cb64570a88fe754c99bb5883c8f5:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-38/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-39/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-39/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-43/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-43/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_scan_fail_level_error_set0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_scan_fail_level_error_set0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_scan_fail_level_warning_a0/m.py": {
+      "fingerprint": "377d5a78db543b15ab500687a01a43139b9d1b0c463900da33d725ae14b3330b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_scan_fail_level_warning_a0/m.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_scan_json_output_structur0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_scan_json_output_structur0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_cli_respects_config_disab0/pkg/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:a07416c8167affd3232ae1df9ed44e3c566ad71cd16678e0594b8446fd060b68:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_cli_respects_config_disab0/pkg/m.py",
+        "coverage": 0.0,
+        "findings": []
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_cli_output_file_writes_js0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_cli_output_file_writes_js0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_cli_stats_shows_cache_per0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_cli_stats_shows_cache_per0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_cli_changed_only_skips_un0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_cli_changed_only_skips_un0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_console_reporter_output0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_console_reporter_output0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_engine_reports_findings_a0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_engine_reports_findings_a0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_json_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_json_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "/tmp/pytest-of-michael/pytest-44/test_sarif_reporter_structure0/m.py": {
+      "fingerprint": "d11438dde9574351d9860bed0e88b54177db4f7daf1460e7d0a81df3c1d88691:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "/tmp/pytest-of-michael/pytest-44/test_sarif_reporter_structure0/m.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'a' is missing a docstring",
+            "symbol": "a",
+            "location": {
+              "line": 1,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/__init__.py": {
+      "fingerprint": "e5f3da3fcfdc2e841fdab158443cc5ad95030ddd4bd2d013fe99164885a6d0da:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/__main__.py": {
+      "fingerprint": "7ac0760698f257ed838f20eae6bbf1ada629ec369e19d5b80cb10256891d94d9:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/__main__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/reporters/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/reporters/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/reporters/sarif.py": {
+      "fingerprint": "c81c67a6370d807f66db9f17b759be5f242915056fe3a5aa713f0f3cd6f80bed:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/reporters/sarif.py",
+        "coverage": 1.0,
+        "findings": [
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'report' missing from docstring",
+            "symbol": "to_sarif",
+            "location": {
+              "line": 6,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG204",
+            "level": "warning",
+            "message": "Function has return annotation but missing Returns section in docstring",
+            "symbol": "to_sarif",
+            "location": {
+              "line": 6,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/reporters/json_reporter.py": {
+      "fingerprint": "8a026c7174ef6b1bfa82f41fbb094fa9323e405a029c81ff1c76a4020693d6db:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/reporters/json_reporter.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'to_dict' is missing a docstring",
+            "symbol": "to_dict",
+            "location": {
+              "line": 10,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'to_json' is missing a docstring",
+            "symbol": "to_json",
+            "location": {
+              "line": 44,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/reporters/console.py": {
+      "fingerprint": "7f6e8145415e988751ae2721fb80fe2155fcc117482d2756b9663b124db0206c:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/reporters/console.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'print_report' is missing a docstring",
+            "symbol": "print_report",
+            "location": {
+              "line": 8,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/reporters/base.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/reporters/base.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/cli/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/cli/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/cli/main.py": {
+      "fingerprint": "02e7cd17fbd32c5035187ca34aaa68e6256262d746e7d25f8d88dc87628e15a0:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/cli/main.py",
+        "coverage": 1.0,
+        "findings": [
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'value' missing from docstring",
+            "symbol": "version_callback",
+            "location": {
+              "line": 32,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'version' missing from docstring",
+            "symbol": "main",
+            "location": {
+              "line": 40,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'changed_only' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'fail_level' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'format' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'config' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'output_file' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'stats' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'paths' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'no_cache' missing from docstring",
+            "symbol": "scan",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'llm_provider' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'max_changes' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'config' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'llm_model' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'rule' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'dry_run' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'paths' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'interactive' missing from docstring",
+            "symbol": "fix",
+            "location": {
+              "line": 123,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/cli/commands.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/cli/commands.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/core/findings.py": {
+      "fingerprint": "8f9ff72dd023c99f9de6610a64910bf2e547a43d236300c34556e80d79eb6560:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/core/findings.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/core/discovery.py": {
+      "fingerprint": "2e0d44870db0db4a7db77f001888ceaa6d4f9b24a08fe4301791d69eec5c581b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/core/discovery.py",
+        "coverage": 0.6666666666666666,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function '_build_spec' is missing a docstring",
+            "symbol": "_build_spec",
+            "location": {
+              "line": 50,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'root' missing from docstring",
+            "symbol": "_load_gitignore",
+            "location": {
+              "line": 23,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'extra_excludes' missing from docstring",
+            "symbol": "discover_python_files",
+            "location": {
+              "line": 57,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'paths' missing from docstring",
+            "symbol": "discover_python_files",
+            "location": {
+              "line": 57,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG204",
+            "level": "warning",
+            "message": "Function has return annotation but missing Returns section in docstring",
+            "symbol": "_load_gitignore",
+            "location": {
+              "line": 23,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG204",
+            "level": "warning",
+            "message": "Function has return annotation but missing Returns section in docstring",
+            "symbol": "discover_python_files",
+            "location": {
+              "line": 57,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/core/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/core/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/core/cache.py": {
+      "fingerprint": "adf9961c453c592c743c32c0c23c61961207a048e9eea0fbdab5452202ecaaed:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/core/cache.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function '_sha256_bytes' is missing a docstring",
+            "symbol": "_sha256_bytes",
+            "location": {
+              "line": 19,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'compute_fingerprint' is missing a docstring",
+            "symbol": "compute_fingerprint",
+            "location": {
+              "line": 23,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'CacheEntry' is missing a docstring",
+            "symbol": "CacheEntry",
+            "location": {
+              "line": 36,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'CacheStore' is missing a docstring",
+            "symbol": "CacheStore",
+            "location": {
+              "line": 42,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function '_cache_file' is missing a docstring",
+            "symbol": "_cache_file",
+            "location": {
+              "line": 53,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'load_cache' is missing a docstring",
+            "symbol": "load_cache",
+            "location": {
+              "line": 57,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'save_cache' is missing a docstring",
+            "symbol": "save_cache",
+            "location": {
+              "line": 73,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'serialize_file_result' is missing a docstring",
+            "symbol": "serialize_file_result",
+            "location": {
+              "line": 88,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'deserialize_file_result' is missing a docstring",
+            "symbol": "deserialize_file_result",
+            "location": {
+              "line": 106,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/core/engine.py": {
+      "fingerprint": "8c714378af247a9b2d9d50f6f1106ecbfdf76e21c8f7b0b4eca0d589be5c251b:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/core/engine.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'scan_paths' is missing a docstring",
+            "symbol": "scan_paths",
+            "location": {
+              "line": 30,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function '_compute_coverage' is missing a docstring",
+            "symbol": "_compute_coverage",
+            "location": {
+              "line": 97,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function '_overall_coverage' is missing a docstring",
+            "symbol": "_overall_coverage",
+            "location": {
+              "line": 107,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/core/config.py": {
+      "fingerprint": "72dff417f63a94156d76bd4b699eec2d041e235e365014407c74ccd1c71850d6:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/core/config.py",
+        "coverage": 0.5,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'Config' is missing a docstring",
+            "symbol": "Config",
+            "location": {
+              "line": 14,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'explicit_path' missing from docstring",
+            "symbol": "load_config",
+            "location": {
+              "line": 24,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG204",
+            "level": "warning",
+            "message": "Function has return annotation but missing Returns section in docstring",
+            "symbol": "load_config",
+            "location": {
+              "line": 24,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/playground/tui.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/playground/tui.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/playground/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/playground/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/rules/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/rules/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/rules/registry.py": {
+      "fingerprint": "ad8204ff2192c614f006a70ffe82d16a17c32fcc7d6ec164c92467731f463d4f:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/rules/registry.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'Rule' is missing a docstring",
+            "symbol": "Rule",
+            "location": {
+              "line": 10,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'register' is missing a docstring",
+            "symbol": "register",
+            "location": {
+              "line": 22,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'all_rules' is missing a docstring",
+            "symbol": "all_rules",
+            "location": {
+              "line": 28,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'get_rule' is missing a docstring",
+            "symbol": "get_rule",
+            "location": {
+              "line": 32,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/rules/base.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/rules/base.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/rules/python_rules.py": {
+      "fingerprint": "06e7d6dbe7ea3446763b57e8e54aad252d15072c5110d6204e0a23be115b1909:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/rules/python_rules.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG101MissingDocstring' is missing a docstring",
+            "symbol": "DG101MissingDocstring",
+            "location": {
+              "line": 21,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG301SummaryStyle' is missing a docstring",
+            "symbol": "DG301SummaryStyle",
+            "location": {
+              "line": 43,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG302BlankLineAfterSummary' is missing a docstring",
+            "symbol": "DG302BlankLineAfterSummary",
+            "location": {
+              "line": 69,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG201GoogleStyleParseError' is missing a docstring",
+            "symbol": "DG201GoogleStyleParseError",
+            "location": {
+              "line": 96,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG202ParamMissingFromDocstring' is missing a docstring",
+            "symbol": "DG202ParamMissingFromDocstring",
+            "location": {
+              "line": 125,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG203ExtraParamInDocstring' is missing a docstring",
+            "symbol": "DG203ExtraParamInDocstring",
+            "location": {
+              "line": 179,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG204ReturnsSectionMissing' is missing a docstring",
+            "symbol": "DG204ReturnsSectionMissing",
+            "location": {
+              "line": 231,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'DG205RaisesSectionValidation' is missing a docstring",
+            "symbol": "DG205RaisesSectionValidation",
+            "location": {
+              "line": 287,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/remediation/llm.py": {
+      "fingerprint": "8a33d0b5f5398dd673a13979d75eacc992a2fb7086ca9ef869a3ac43362b38d0:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/remediation/llm.py",
+        "coverage": 1.0,
+        "findings": [
+          {
+            "rule_id": "DG202",
+            "level": "error",
+            "message": "Parameter 'config' missing from docstring",
+            "symbol": "create_llm_client",
+            "location": {
+              "line": 181,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG204",
+            "level": "warning",
+            "message": "Function has return annotation but missing Returns section in docstring",
+            "symbol": "create_llm_client",
+            "location": {
+              "line": 181,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG204",
+            "level": "warning",
+            "message": "Function has return annotation but missing Returns section in docstring",
+            "symbol": "get_default_config",
+            "location": {
+              "line": 186,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/remediation/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/remediation/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/remediation/diff.py": {
+      "fingerprint": "1de8f585d18761528dfdf5f90a6799acf14993cb8734c7afee72a917bacfaa70:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/remediation/diff.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/remediation/prompts.py": {
+      "fingerprint": "88c94f89c0d9bb88e2979aece5d968c5d9c85ca52a76f900dceb131376aa5f54:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/remediation/prompts.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/remediation/engine.py": {
+      "fingerprint": "b2638ee39524ee5237aaaf23e1ab3ad1a8653f2095181ddfaab2c5c51376bf73:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/remediation/engine.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/remediation/signatures.py": {
+      "fingerprint": "fae0581fa0305a11fbd13a1e5fd230961dc6e3ae5fb85f9f980bb16c48e47fd5:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/remediation/signatures.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/adapters/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/adapters/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/adapters/base.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/adapters/base.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/adapters/python/__init__.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/adapters/python/__init__.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    },
+    "src/dococtopy/adapters/python/adapter.py": {
+      "fingerprint": "3d3e20e284f4bfa7d84905ddc3cdb89ec7a94e53818a8405fcc6352e9fd7f885:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/adapters/python/adapter.py",
+        "coverage": 0.0,
+        "findings": [
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Class 'PythonSymbol' is missing a docstring",
+            "symbol": "PythonSymbol",
+            "location": {
+              "line": 15,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'parse_module' is missing a docstring",
+            "symbol": "parse_module",
+            "location": {
+              "line": 24,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'iter_symbols' is missing a docstring",
+            "symbol": "iter_symbols",
+            "location": {
+              "line": 28,
+              "column": 0
+            },
+            "suggestion": null
+          },
+          {
+            "rule_id": "DG101",
+            "level": "error",
+            "message": "Function 'load_symbols_from_file' is missing a docstring",
+            "symbol": "load_symbols_from_file",
+            "location": {
+              "line": 59,
+              "column": 0
+            },
+            "suggestion": null
+          }
+        ]
+      }
+    },
+    "src/dococtopy/adapters/python/parser.py": {
+      "fingerprint": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855:44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a:6d7b0b85124f0d458b920e5003a6dfb3ef70142b5879c512e671c525939787bb:ruleset-1",
+      "file_result": {
+        "path": "src/dococtopy/adapters/python/parser.py",
+        "coverage": 1.0,
+        "findings": []
+      }
+    }
+  }
+}
