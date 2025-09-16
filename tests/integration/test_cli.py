@@ -51,10 +51,10 @@ def test_cli_respects_config_disabling_rule(tmp_path: Path) -> None:
     py = tmp_path / "pyproject.toml"
     py.write_text(
         """
-        [tool.docguard]
-        [tool.docguard.rules]
-        DG101 = "off"
-        """
+[tool.docguard]
+[tool.docguard.rules]
+DG101 = "off"
+"""
     )
     res = _run_cli(["scan", str(tmp_path), "--format", "json", "--config", str(py)])
     assert res.returncode == 0
