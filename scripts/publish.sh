@@ -29,7 +29,7 @@ uv build
 
 # Check the built package
 echo "🔍 Checking package..."
-uv tool run twine check dist/*
+uv tool run twine check /home/michael/dist/*
 
 echo "✅ Package built successfully!"
 echo ""
@@ -41,4 +41,4 @@ echo "2. Create a GitHub release with tag v$VERSION"
 echo "3. The GitHub Action will automatically publish to PyPI"
 echo ""
 echo "📁 Built files:"
-ls -la dist/
+ls -la /home/michael/dist/
