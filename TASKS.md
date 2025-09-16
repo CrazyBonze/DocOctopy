@@ -49,6 +49,20 @@ This project uses [taskipy](https://github.com/taskipy/taskipy) for development 
 - `task ci` - Run linting and testing with coverage (for CI)
 - `task pre-commit` - Run format, lint, and fast tests (for pre-commit hooks)
 
+## CI/CD Integration
+
+These tasks are used in our GitHub Actions workflows:
+
+- **Test Workflow** (`.github/workflows/test.yml`):
+  - `task install` - Install dependencies
+  - `task ci` - Run linting and tests with coverage
+  - `task build` - Build package artifacts
+
+- **Publish Workflow** (`.github/workflows/publish.yml`):
+  - `task install` - Install dependencies
+  - `task build` - Build package artifacts
+  - `task check` - Validate package with twine
+
 ## Usage Examples
 
 ```bash
