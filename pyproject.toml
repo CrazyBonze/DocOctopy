@@ -50,6 +50,7 @@ dev = [
     "pytest>=8.4.2",
     "pytest-cov>=7.0.0",
     "pytest-xdist>=3.8.0",
+    "taskipy>=1.12.0",
 ]
 
 [project.scripts]
@@ -130,6 +131,45 @@ ignore_missing_imports = true
 [[tool.mypy.overrides]]
 module = ["dococtopy.remediation.*"]
 ignore_errors = true
+
+[tool.taskipy.tasks]
+# Linting tasks
+lint = "task lint:black && task lint:isort && task lint:mypy"
+"lint:black" = "black --check src/ tests/"
+"lint:isort" = "isort --check-only src/ tests/"
+"lint:mypy" = "mypy src/"
+
+# Formatting tasks
+format = "task format:black && task format:isort"
+"format:black" = "black src/ tests/"
+"format:isort" = "isort src/ tests/"
+
+# Testing tasks
+test = "pytest tests/ -v"
+"test:cov" = "pytest --cov=src/dococtopy --cov-report=term-missing --cov-report=html tests/"
+"test:fast" = "pytest tests/ -v --maxfail=1"
+"test:unit" = "pytest tests/unit/ -v"
+"test:integration" = "pytest tests/integration/ -v"
+
+# Build and publish tasks
+build = "uv build"
+check = "uv tool run twine check dist/*"
+publish = "uv tool run twine upload dist/*"
+
+# Development tasks
+dev = "task format && task lint && task test"
+clean = "rm -rf dist/ build/ *.egg-info/ .pytest_cache/ .coverage htmlcov/ .mypy_cache/"
+install = "uv sync --dev"
+"install:llm" = "uv sync --dev --extra llm"
+
+# LLM environment tasks
+"llm:setup" = "uv sync --dev --extra llm && echo 'LLM environment ready!'"
+"llm:test" = "python -c 'import dspy; print(\"DSPy available:\", dspy is not None)'"
+"llm:clean" = "uv sync --dev && echo 'LLM dependencies removed'"
+
+# CI/CD tasks
+ci = "task lint && task test:cov"
+pre-commit = "task format && task lint && task test:fast"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/dococtopy"]
