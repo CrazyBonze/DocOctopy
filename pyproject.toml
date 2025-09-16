@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dococtopy"
-version = "0.1.0"
+version = "0.1.1"
 description = "A language-agnostic docstyle compliance & remediation tool"
 readme = "README.md"
 license = { text = "MIT" }
@@ -108,15 +108,15 @@ known_first_party = ["dococtopy"]
 python_version = "3.9"
 warn_return_any = true
 warn_unused_configs = true
-disallow_untyped_defs = false  # Relaxed for initial release
-disallow_incomplete_defs = false  # Relaxed for initial release
+disallow_untyped_defs = false       # Relaxed for initial release
+disallow_incomplete_defs = false    # Relaxed for initial release
 check_untyped_defs = true
-disallow_untyped_decorators = false  # Relaxed for initial release
+disallow_untyped_decorators = false # Relaxed for initial release
 no_implicit_optional = true
 warn_redundant_casts = true
-warn_unused_ignores = false  # Disabled for initial release
+warn_unused_ignores = false         # Disabled for initial release
 warn_no_return = true
-warn_unreachable = false  # Disabled for initial release
+warn_unreachable = false            # Disabled for initial release
 strict_equality = true
 
 [[tool.mypy.overrides]]
