@@ -349,6 +349,277 @@ class DG205RaisesSectionValidation:
         return exceptions
 
 
+@dataclass
+class DG206ArgsSectionFormat:
+    """Check that Args section follows Google style format."""
+
+    id: str = "DG206"
+    name: str = "Args section should use proper Google style format"
+    level_default: str = "warning"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if not sym.docstring:
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+                if not parsed.params:
+                    continue
+
+                for param in parsed.params:
+                    # Check if param description is missing
+                    if not param.description or param.description.strip() == "":
+                        findings.append(
+                            Finding(  # type: ignore[call-arg]
+                                rule_id=self.id,
+                                level=FindingLevel.WARNING,
+                                message=f"Parameter '{param.arg_name}' in Args section is missing description",
+                                symbol=sym.name,
+                                location=Location(line=sym.lineno, column=sym.col),
+                            )
+                        )
+                    # Check if description starts with lowercase (should be capitalized)
+                    elif param.description and param.description[0].islower():
+                        findings.append(
+                            Finding(  # type: ignore[call-arg]
+                                rule_id=self.id,
+                                level=FindingLevel.WARNING,
+                                message=f"Parameter '{param.arg_name}' description should start with capital letter",
+                                symbol=sym.name,
+                                location=Location(line=sym.lineno, column=sym.col),
+                            )
+                        )
+            except Exception:
+                # Skip if parsing fails (handled by DG201)
+                continue
+
+        return findings
+
+
+@dataclass
+class DG207ReturnsSectionFormat:
+    """Check that Returns section follows Google style format."""
+
+    id: str = "DG207"
+    name: str = "Returns section should use proper Google style format"
+    level_default: str = "warning"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if not sym.docstring:
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+                if not parsed.returns:
+                    continue
+
+                # Check if returns description is missing
+                if (
+                    not parsed.returns.description
+                    or parsed.returns.description.strip() == ""
+                ):
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.WARNING,
+                            message="Returns section is missing description",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+                # Check if description starts with lowercase (should be capitalized)
+                elif (
+                    parsed.returns.description
+                    and parsed.returns.description[0].islower()
+                ):
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.WARNING,
+                            message="Returns section description should start with capital letter",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+            except Exception:
+                # Skip if parsing fails (handled by DG201)
+                continue
+
+        return findings
+
+
+@dataclass
+class DG208RaisesSectionFormat:
+    """Check that Raises section follows Google style format."""
+
+    id: str = "DG208"
+    name: str = "Raises section should use proper Google style format"
+    level_default: str = "warning"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if not sym.docstring:
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+                if not parsed.raises:
+                    continue
+
+                for raise_item in parsed.raises:
+                    # Check if raises description is missing
+                    if (
+                        not raise_item.description
+                        or raise_item.description.strip() == ""
+                    ):
+                        findings.append(
+                            Finding(  # type: ignore[call-arg]
+                                rule_id=self.id,
+                                level=FindingLevel.WARNING,
+                                message=f"Exception '{raise_item.type_name}' in Raises section is missing description",
+                                symbol=sym.name,
+                                location=Location(line=sym.lineno, column=sym.col),
+                            )
+                        )
+                    # Check if description starts with lowercase (should be capitalized)
+                    elif raise_item.description and raise_item.description[0].islower():
+                        findings.append(
+                            Finding(  # type: ignore[call-arg]
+                                rule_id=self.id,
+                                level=FindingLevel.WARNING,
+                                message=f"Exception '{raise_item.type_name}' description should start with capital letter",
+                                symbol=sym.name,
+                                location=Location(line=sym.lineno, column=sym.col),
+                            )
+                        )
+            except Exception:
+                # Skip if parsing fails (handled by DG201)
+                continue
+
+        return findings
+
+
+@dataclass
+class DG209SummaryLength:
+    """Check that summary is not too long or too short."""
+
+    id: str = "DG209"
+    name: str = "Summary should be appropriate length"
+    level_default: str = "info"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if not sym.docstring:
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+                if not parsed.short_description:
+                    continue
+
+                summary = parsed.short_description.strip()
+                # Check if summary is too short (less than 10 characters)
+                if len(summary) < 10:
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.INFO,
+                            message="Summary is too short (less than 10 characters)",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+                # Check if summary is too long (more than 80 characters)
+                elif len(summary) > 80:
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.INFO,
+                            message="Summary is too long (more than 80 characters)",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+            except Exception:
+                # Skip if parsing fails (handled by DG201)
+                continue
+
+        return findings
+
+
+@dataclass
+class DG210DocstringIndentation:
+    """Check that docstring indentation is consistent."""
+
+    id: str = "DG210"
+    name: str = "Docstring should have consistent indentation"
+    level_default: str = "warning"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+
+        for sym in symbols:
+            if not sym.docstring:
+                continue
+
+            # Get the raw docstring lines
+            docstring_lines = sym.docstring.split("\n")
+            if len(docstring_lines) < 2:
+                continue
+
+            # Check if first line after opening quotes is indented
+            first_content_line = None
+            for i, line in enumerate(docstring_lines):
+                if line.strip() and not line.strip().startswith('"""'):
+                    first_content_line = i
+                    break
+
+            if first_content_line is None:
+                continue
+
+            # Check indentation consistency
+            expected_indent = len(docstring_lines[first_content_line]) - len(
+                docstring_lines[first_content_line].lstrip()
+            )
+
+            for i, line in enumerate(
+                docstring_lines[first_content_line + 1 :], first_content_line + 1
+            ):
+                if line.strip() and not line.strip().startswith('"""'):
+                    actual_indent = len(line) - len(line.lstrip())
+                    if actual_indent != expected_indent:
+                        findings.append(
+                            Finding(  # type: ignore[call-arg]
+                                rule_id=self.id,
+                                level=FindingLevel.WARNING,
+                                message=f"Inconsistent indentation in docstring (line {i + 1})",
+                                symbol=sym.name,
+                                location=Location(line=sym.lineno + i, column=sym.col),
+                            )
+                        )
+                        break  # Only report first inconsistency
+
+        return findings
+
+
 # Auto-register for MVP
 register(DG101MissingDocstring())
 register(DG301SummaryStyle())
@@ -358,3 +629,8 @@ register(DG202ParamMissingFromDocstring())
 register(DG203ExtraParamInDocstring())
 register(DG204ReturnsSectionMissing())
 register(DG205RaisesSectionValidation())
+register(DG206ArgsSectionFormat())
+register(DG207ReturnsSectionFormat())
+register(DG208RaisesSectionFormat())
+register(DG209SummaryLength())
+register(DG210DocstringIndentation())

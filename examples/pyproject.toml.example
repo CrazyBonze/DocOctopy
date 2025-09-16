@@ -32,6 +32,11 @@ DG202 = "error"      # Parameter missing from docstring
 DG203 = "error"      # Extra parameter in docstring
 DG204 = "warning"    # Returns section missing or mismatched
 DG205 = "info"       # Raises section validation
+DG206 = "warning"    # Args section format validation
+DG207 = "warning"    # Returns section format validation
+DG208 = "warning"    # Raises section format validation
+DG209 = "info"       # Summary length validation
+DG210 = "warning"    # Docstring indentation consistency
 
 # Per-path overrides
 [[tool.docguard.overrides]]

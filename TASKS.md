@@ -5,17 +5,20 @@ This project uses [taskipy](https://github.com/taskipy/taskipy) for development 
 ## Available Tasks
 
 ### Linting Tasks
+
 - `task lint` - Run all linting checks (black, isort, mypy)
 - `task lint:black` - Check code formatting with Black
 - `task lint:isort` - Check import sorting with isort
 - `task lint:mypy` - Run type checking with MyPy
 
 ### Formatting Tasks
+
 - `task format` - Format code with Black and isort
 - `task format:black` - Format code with Black
 - `task format:isort` - Sort imports with isort
 
 ### Testing Tasks
+
 - `task test` - Run all tests with verbose output
 - `task test:cov` - Run tests with coverage reporting
 - `task test:fast` - Run tests with fast failure (stop on first failure)
@@ -23,22 +26,26 @@ This project uses [taskipy](https://github.com/taskipy/taskipy) for development 
 - `task test:integration` - Run only integration tests
 
 ### Build and Publish Tasks
+
 - `task build` - Build the package with `uv build`
 - `task check` - Check the built package with twine
 - `task publish` - Upload the package to PyPI with twine
 
 ### Development Tasks
+
 - `task dev` - Run format, lint, and test (full development cycle)
 - `task clean` - Clean build artifacts and cache files
 - `task install` - Install development dependencies
 - `task install:llm` - Install development dependencies with LLM extras
 
 ### LLM Environment Tasks
+
 - `task llm:setup` - Set up LLM environment (install DSPy and dependencies)
 - `task llm:test` - Test if DSPy is available
 - `task llm:clean` - Remove LLM dependencies
 
 ### CI/CD Tasks
+
 - `task ci` - Run linting and testing with coverage (for CI)
 - `task pre-commit` - Run format, lint, and fast tests (for pre-commit hooks)
 
@@ -66,6 +73,7 @@ uv run task check
 ## Task Dependencies
 
 Many tasks are composed of other tasks:
+
 - `lint` = `lint:black` + `lint:isort` + `lint:mypy`
 - `format` = `format:black` + `format:isort`
 - `dev` = `format` + `lint` + `test`

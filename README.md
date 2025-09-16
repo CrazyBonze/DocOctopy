@@ -119,6 +119,11 @@ DG302 = "warning"  # Blank line after summary
 - **DG203**: Extra parameter in docstring
 - **DG204**: Returns section missing or mismatched
 - **DG205**: Raises section validation
+- **DG206**: Args section format validation
+- **DG207**: Returns section format validation
+- **DG208**: Raises section format validation
+- **DG209**: Summary length validation
+- **DG210**: Docstring indentation consistency
 
 ## Configuration
 
@@ -140,6 +145,11 @@ DG202 = "warning"
 DG203 = "warning"
 DG204 = "info"
 DG205 = "info"
+DG206 = "warning"
+DG207 = "warning"
+DG208 = "warning"
+DG209 = "info"
+DG210 = "warning"
 DG301 = "warning"
 DG302 = "warning"
 
