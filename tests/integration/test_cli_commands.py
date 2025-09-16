@@ -25,11 +25,11 @@ def test_cli_scan_help() -> None:
         cwd=Path.cwd(),
     )
     assert result.returncode == 0
-    assert "-format" in result.stdout
-    assert "-no-cache" in result.stdout
-    assert "-changed-only" in result.stdout
-    assert "-stats" in result.stdout
-    assert "-output-file" in result.stdout
+    assert "--format" in result.stdout
+    assert "--no-cache" in result.stdout
+    assert "--changed-only" in result.stdout
+    assert "--stats" in result.stdout
+    assert "--output-file" in result.stdout
 
 
 def test_cli_config_init_help() -> None:
