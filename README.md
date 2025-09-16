@@ -394,3 +394,4 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - Uses [docstring-parser](https://github.com/rr-/docstring_parser) for Google-style parsing
 - Powered by [Typer](https://github.com/tiangolo/typer) for CLI interface
 - Styled with [Rich](https://github.com/Textualize/rich) for beautiful output
+# Test trigger
