@@ -6,8 +6,11 @@ from typing import Dict, List, Optional
 
 try:
     import tomllib  # Python 3.11+
-except Exception:  # pragma: no cover
-    tomllib = None  # type: ignore
+except ImportError:
+    try:
+        import tomli as tomllib  # Python < 3.11
+    except ImportError:
+        tomllib = None  # type: ignore
 
 
 @dataclass
