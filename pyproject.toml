@@ -152,7 +152,7 @@ test = "pytest tests/ -v"
 "test:integration" = "pytest tests/integration/ -v"
 
 # Build and publish tasks
-build = "uv build"
+build = "uv build -o dist"
 check = "uv tool run twine check dist/*"
 publish = "uv tool run twine upload dist/*"
 

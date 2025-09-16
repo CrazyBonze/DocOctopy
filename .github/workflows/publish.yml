@@ -21,11 +21,14 @@ jobs:
       with:
         version: "latest"
     
+    - name: Install dependencies
+      run: uv run task install
+    
     - name: Build package
-      run: uv build
+      run: uv run task build
     
     - name: Check package
-      run: uv tool run twine check dist/*
+      run: uv run task check
     
     - name: Publish to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
