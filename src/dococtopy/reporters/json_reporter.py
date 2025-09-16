@@ -18,9 +18,9 @@ def to_dict(report) -> dict[str, Any]:
                 "findings": [
                     {
                         "rule": f.rule_id,
-                        "level": f.level.value
-                        if hasattr(f.level, "value")
-                        else str(f.level),
+                        "level": (
+                            f.level.value if hasattr(f.level, "value") else str(f.level)
+                        ),
                         "symbol": f.symbol,
                         "message": f.message,
                         "location": {"line": f.location.line, "col": f.location.column},

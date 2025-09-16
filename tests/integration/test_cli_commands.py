@@ -19,6 +19,7 @@ def test_cli_help_commands() -> None:
 def test_cli_scan_help() -> None:
     """Test that scan command help works."""
     import re
+
     result = subprocess.run(
         [sys.executable, "-m", "dococtopy", "scan", "--help"],
         capture_output=True,
@@ -26,10 +27,10 @@ def test_cli_scan_help() -> None:
         cwd=Path.cwd(),
     )
     assert result.returncode == 0
-    
+
     # Strip ANSI escape codes to get clean text
-    clean_output = re.sub(r'\x1b\[[0-9;]*m', '', result.stdout)
-    
+    clean_output = re.sub(r"\x1b\[[0-9;]*m", "", result.stdout)
+
     assert "--format" in clean_output
     assert "--no-cache" in clean_output
     assert "--changed-only" in clean_output
