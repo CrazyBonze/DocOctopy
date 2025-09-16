@@ -18,11 +18,15 @@ def test_cli_help_commands() -> None:
 
 def test_cli_scan_help() -> None:
     """Test that scan command help works."""
+    import os
+    env = os.environ.copy()
+    env["NO_COLOR"] = "1"  # Disable colors to avoid ANSI escape codes
     result = subprocess.run(
         [sys.executable, "-m", "dococtopy", "scan", "--help"],
         capture_output=True,
         text=True,
         cwd=Path.cwd(),
+        env=env,
     )
     assert result.returncode == 0
     assert "--format" in result.stdout
