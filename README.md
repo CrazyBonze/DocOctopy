@@ -659,6 +659,36 @@ uv sync --group dev
 uv run pytest
 ```
 
+### Development Workflow
+
+We use pre-commit hooks to ensure code quality and prevent CI failures:
+
+```bash
+# Install pre-commit hooks (one-time setup)
+uv run task pre-commit:install
+
+# Run pre-commit checks manually
+uv run task pre-commit:run
+
+# Or use the convenience script
+./scripts/pre-commit.sh
+```
+
+**Pre-commit checks include:**
+- **Black**: Code formatting
+- **isort**: Import sorting
+- **MyPy**: Type checking
+- **Pytest**: Fast test suite
+
+**Available tasks:**
+```bash
+uv run task format          # Format code
+uv run task lint            # Run linting
+uv run task test:fast       # Run fast tests
+uv run task test:cov        # Run tests with coverage
+uv run task ci              # Run full CI pipeline
+```
+
 ### Adding New Rules
 
 1. Create rule class in `src/dococtopy/rules/`
