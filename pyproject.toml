@@ -9,7 +9,7 @@ version = "0.1.2"
 description = "A language-agnostic docstyle compliance & remediation tool"
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Michael", email = "your-email@example.com" }]
 maintainers = [{ name = "Michael", email = "your-email@example.com" }]
 keywords = ["docstring", "documentation", "linting", "compliance", "llm", "ai"]
@@ -84,7 +84,7 @@ exclude_lines = [
 
 [tool.black]
 line-length = 88
-target-version = ['py39']
+target-version = ['py310']
 include = '\.pyi?$'
 extend-exclude = '''
 /(
@@ -107,7 +107,7 @@ line_length = 88
 known_first_party = ["dococtopy"]
 
 [tool.mypy]
-python_version = "3.9"
+python_version = "3.10"
 warn_return_any = true
 warn_unused_configs = true
 disallow_untyped_defs = false       # Relaxed for initial release
