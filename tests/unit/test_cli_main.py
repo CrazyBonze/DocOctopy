@@ -291,7 +291,9 @@ class TestFixCommand:
         test_file = tmp_path / "test.py"
         test_file.write_text("def hello():\n    pass\n")
 
-        with patch("dococtopy.remediation.engine.RemediationEngine") as mock_engine_class:
+        with patch(
+            "dococtopy.remediation.engine.RemediationEngine"
+        ) as mock_engine_class:
             mock_engine = Mock()
             mock_engine_class.return_value = mock_engine
             mock_engine.remediate_file.return_value = []
@@ -336,7 +338,9 @@ class TestFixCommand:
         test_file = tmp_path / "test.py"
         test_file.write_text("def hello():\n    pass\n")
 
-        with patch("dococtopy.remediation.engine.RemediationEngine") as mock_engine_class:
+        with patch(
+            "dococtopy.remediation.engine.RemediationEngine"
+        ) as mock_engine_class:
             mock_engine = Mock()
             mock_engine_class.return_value = mock_engine
             mock_engine.remediate_file.return_value = []
@@ -384,7 +388,9 @@ class TestFixCommand:
         mock_change.symbol_kind = "function"
         mock_change.issues_addressed = ["DG101"]
 
-        with patch("dococtopy.remediation.engine.RemediationEngine") as mock_engine_class:
+        with patch(
+            "dococtopy.remediation.engine.RemediationEngine"
+        ) as mock_engine_class:
             mock_engine = Mock()
             mock_engine_class.return_value = mock_engine
             mock_engine.remediate_file.return_value = [mock_change]

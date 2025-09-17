@@ -52,6 +52,7 @@ dev = [
     "pytest-cov>=7.0.0",
     "pytest-xdist>=3.8.0",
     "taskipy>=1.12.0",
+    "pre-commit>=3.0.0",
 ]
 
 [project.scripts]
@@ -171,6 +172,9 @@ install = "uv sync --dev"
 # CI/CD tasks
 ci = "task lint && task test:cov"
 pre-commit = "task format && task lint && task test:fast"
+"pre-commit:install" = "pre-commit install"
+"pre-commit:run" = "pre-commit run --all-files"
+"pre-commit:update" = "pre-commit autoupdate"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/dococtopy"]
