@@ -37,10 +37,13 @@ jobs:
         uv run python -c "import dococtopy; print('DocOctopy imported successfully')"
 
     - name: Run linting
-      run: uv run task lint
+      run: |
+        uv run black --check src/ tests/
+        uv run isort --check-only src/ tests/
+        uv run mypy src/
 
     - name: Run tests with coverage
-      run: uv run task test:cov
+      run: uv run pytest --cov=src/dococtopy --cov-report=term-missing --cov-report=html tests/
 
   build:
     runs-on: ubuntu-latest
@@ -57,7 +60,7 @@ jobs:
         version: "0.4.0"
 
     - name: Build package
-      run: uv run task build
+      run: uv build -o dist
 
     - name: Upload build artifacts
       uses: actions/upload-artifact@v4
