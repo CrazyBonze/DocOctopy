@@ -66,16 +66,16 @@ class TestScanCommand:
         mock_report.files = []
         mock_report.summary = mock_summary
 
-        # Mock the scan_paths function
-        with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+        # Mock the scan_paths function at the module level where it's imported
+        with patch("dococtopy.core.engine.scan_paths") as mock_scan:
             mock_scan.return_value = (mock_report, {})
 
-            # Mock load_config
-            with patch("dococtopy.cli.main.load_config") as mock_config:
+            # Mock load_config at the module level where it's imported
+            with patch("dococtopy.core.config.load_config") as mock_config:
                 mock_config.return_value = None
 
-                # Mock print_report to avoid console output issues
-                with patch("dococtopy.cli.main.print_report") as mock_print:
+                # Mock print_report at the module level where it's imported
+                with patch("dococtopy.reporters.console.print_report") as mock_print:
                     # Run scan command with proper parameters - expect typer.Exit
                     with pytest.raises(typer.Exit) as exc_info:
                         scan(
@@ -107,14 +107,14 @@ class TestScanCommand:
         mock_report.files = []
         mock_report.summary = mock_summary
 
-        with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+        with patch("dococtopy.core.engine.scan_paths") as mock_scan:
             mock_scan.return_value = (mock_report, {})
 
-            with patch("dococtopy.cli.main.load_config") as mock_config:
+            with patch("dococtopy.core.config.load_config") as mock_config:
                 mock_config.return_value = None
 
                 # Mock to_json to avoid actual JSON serialization
-                with patch("dococtopy.cli.main.to_json") as mock_json:
+                with patch("dococtopy.reporters.json_reporter.to_json") as mock_json:
                     mock_json.return_value = '{"files": []}'
 
                     # Mock sys.stdout.write
@@ -150,13 +150,13 @@ class TestScanCommand:
         mock_report.files = []
         mock_report.summary = mock_summary
 
-        with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+        with patch("dococtopy.core.engine.scan_paths") as mock_scan:
             mock_scan.return_value = (mock_report, {})
 
-            with patch("dococtopy.cli.main.load_config") as mock_config:
+            with patch("dococtopy.core.config.load_config") as mock_config:
                 mock_config.return_value = None
 
-                with patch("dococtopy.cli.main.to_json") as mock_json:
+                with patch("dococtopy.reporters.json_reporter.to_json") as mock_json:
                     mock_json.return_value = '{"files": []}'
 
                     with pytest.raises(typer.Exit) as exc_info:
@@ -190,13 +190,13 @@ class TestScanCommand:
         mock_report.files = []
         mock_report.summary = mock_summary
 
-        with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+        with patch("dococtopy.core.engine.scan_paths") as mock_scan:
             mock_scan.return_value = (mock_report, {})
 
-            with patch("dococtopy.cli.main.load_config") as mock_config:
+            with patch("dococtopy.core.config.load_config") as mock_config:
                 mock_config.return_value = None
 
-                with patch("dococtopy.cli.main.to_sarif") as mock_sarif:
+                with patch("dococtopy.reporters.sarif.to_sarif") as mock_sarif:
                     mock_sarif.return_value = {"runs": []}
 
                     with patch("sys.stdout.write") as mock_write:
@@ -232,13 +232,13 @@ class TestScanCommand:
         mock_report.files = []
         mock_report.summary = mock_summary
 
-        with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+        with patch("dococtopy.core.engine.scan_paths") as mock_scan:
             mock_scan.return_value = (mock_report, {})
 
-            with patch("dococtopy.cli.main.load_config") as mock_config:
+            with patch("dococtopy.core.config.load_config") as mock_config:
                 mock_config.return_value = None
 
-                with patch("dococtopy.cli.main.print_report") as mock_print:
+                with patch("dococtopy.reporters.console.print_report") as mock_print:
                     with pytest.raises(typer.Exit) as exc_info:
                         scan(
                             paths=[test_file],
@@ -262,13 +262,13 @@ class TestScanCommand:
         mock_report_with_findings.files = [mock_file_result]
         mock_report_with_findings.summary = mock_summary
 
-        with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+        with patch("dococtopy.core.engine.scan_paths") as mock_scan:
             mock_scan.return_value = (mock_report_with_findings, {})
 
-            with patch("dococtopy.cli.main.load_config") as mock_config:
+            with patch("dococtopy.core.config.load_config") as mock_config:
                 mock_config.return_value = None
 
-                with patch("dococtopy.cli.main.print_report") as mock_print:
+                with patch("dococtopy.reporters.console.print_report") as mock_print:
                     with pytest.raises(typer.Exit) as exc_info:
                         scan(
                             paths=[test_file],
@@ -291,12 +291,12 @@ class TestFixCommand:
         test_file = tmp_path / "test.py"
         test_file.write_text("def hello():\n    pass\n")
 
-        with patch("dococtopy.cli.main.RemediationEngine") as mock_engine_class:
+        with patch("dococtopy.remediation.engine.RemediationEngine") as mock_engine_class:
             mock_engine = Mock()
             mock_engine_class.return_value = mock_engine
             mock_engine.remediate_file.return_value = []
 
-            with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+            with patch("dococtopy.core.engine.scan_paths") as mock_scan:
                 mock_report = Mock()
                 mock_file_result = Mock()
                 mock_file_result.path = test_file
@@ -304,7 +304,7 @@ class TestFixCommand:
                 mock_report.files = [mock_file_result]
                 mock_scan.return_value = (mock_report, {})
 
-                with patch("dococtopy.cli.main.load_config") as mock_config:
+                with patch("dococtopy.core.config.load_config") as mock_config:
                     mock_config.return_value = None
 
                     # Mock the import that happens inside the function
@@ -336,12 +336,12 @@ class TestFixCommand:
         test_file = tmp_path / "test.py"
         test_file.write_text("def hello():\n    pass\n")
 
-        with patch("dococtopy.cli.main.RemediationEngine") as mock_engine_class:
+        with patch("dococtopy.remediation.engine.RemediationEngine") as mock_engine_class:
             mock_engine = Mock()
             mock_engine_class.return_value = mock_engine
             mock_engine.remediate_file.return_value = []
 
-            with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+            with patch("dococtopy.core.engine.scan_paths") as mock_scan:
                 mock_report = Mock()
                 mock_file_result = Mock()
                 mock_file_result.path = test_file
@@ -349,7 +349,7 @@ class TestFixCommand:
                 mock_report.files = [mock_file_result]
                 mock_scan.return_value = (mock_report, {})
 
-                with patch("dococtopy.cli.main.load_config") as mock_config:
+                with patch("dococtopy.core.config.load_config") as mock_config:
                     mock_config.return_value = None
 
                     with patch(
@@ -384,12 +384,12 @@ class TestFixCommand:
         mock_change.symbol_kind = "function"
         mock_change.issues_addressed = ["DG101"]
 
-        with patch("dococtopy.cli.main.RemediationEngine") as mock_engine_class:
+        with patch("dococtopy.remediation.engine.RemediationEngine") as mock_engine_class:
             mock_engine = Mock()
             mock_engine_class.return_value = mock_engine
             mock_engine.remediate_file.return_value = [mock_change]
 
-            with patch("dococtopy.cli.main.scan_paths") as mock_scan:
+            with patch("dococtopy.core.engine.scan_paths") as mock_scan:
                 mock_report = Mock()
                 mock_file_result = Mock()
                 mock_file_result.path = test_file
@@ -397,7 +397,7 @@ class TestFixCommand:
                 mock_report.files = [mock_file_result]
                 mock_scan.return_value = (mock_report, {})
 
-                with patch("dococtopy.cli.main.load_config") as mock_config:
+                with patch("dococtopy.core.config.load_config") as mock_config:
                     mock_config.return_value = None
 
                     with patch(
@@ -425,7 +425,7 @@ class TestFixCommand:
         test_file.write_text("def hello():\n    pass\n")
 
         with patch(
-            "dococtopy.cli.main.RemediationEngine",
+            "dococtopy.remediation.engine.RemediationEngine",
             side_effect=ImportError("dspy not found"),
         ):
             with pytest.raises(typer.Exit) as exc_info:
@@ -447,7 +447,7 @@ class TestFixCommand:
         test_file.write_text("def hello():\n    pass\n")
 
         with patch(
-            "dococtopy.cli.main.RemediationEngine",
+            "dococtopy.remediation.engine.RemediationEngine",
             side_effect=Exception("Something went wrong"),
         ):
             with pytest.raises(typer.Exit) as exc_info:

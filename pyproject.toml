@@ -165,7 +165,7 @@ install = "uv sync --dev"
 
 # LLM environment tasks
 "llm:setup" = "uv sync --dev --extra llm && echo 'LLM environment ready!'"
-"llm:test" = "python -c 'import dspy; print(\"DSPy available:\", dspy is not None)'"
+"llm:test" = "uv run --active python -c 'import dspy; print(\"DSPy available:\", dspy is not None)'"
 "llm:clean" = "uv sync --dev && echo 'LLM dependencies removed'"
 
 # CI/CD tasks

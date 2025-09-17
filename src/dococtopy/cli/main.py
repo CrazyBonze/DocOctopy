@@ -8,17 +8,8 @@ from typing import List, Optional, Set
 
 import typer
 from rich.console import Console
-from rich.panel import Panel
 
 from dococtopy import __version__
-from dococtopy.core.config import load_config
-from dococtopy.core.engine import scan_paths
-from dococtopy.core.findings import FindingLevel
-from dococtopy.remediation.engine import RemediationEngine, RemediationOptions
-from dococtopy.remediation.llm import LLMConfig
-from dococtopy.reporters.console import print_report
-from dococtopy.reporters.json_reporter import to_json
-from dococtopy.reporters.sarif import to_sarif
 
 # Create the main app
 app = typer.Typer(
@@ -79,6 +70,14 @@ def scan(
     ),
 ):
     """Scan paths for documentation compliance issues."""
+    # Import heavy modules only when needed
+    from dococtopy.core.config import load_config
+    from dococtopy.core.engine import scan_paths
+    from dococtopy.core.findings import FindingLevel
+    from dococtopy.reporters.console import print_report
+    from dococtopy.reporters.json_reporter import to_json
+    from dococtopy.reporters.sarif import to_sarif
+    
     cfg = load_config(config)
     report, scan_stats = scan_paths(
         paths, config=cfg, use_cache=not no_cache, changed_only=changed_only
@@ -154,6 +153,13 @@ def fix(
 ):
     """Fix documentation issues using LLM assistance."""
     try:
+        # Import heavy modules only when needed
+        from dococtopy.core.config import load_config
+        from dococtopy.core.engine import scan_paths
+        from dococtopy.remediation.engine import RemediationEngine, RemediationOptions
+        from dococtopy.remediation.llm import LLMConfig
+        from dococtopy.remediation.interactive import InteractiveReviewer, InteractiveReviewOptions
+        
         # Parse rule IDs
         rule_ids = None
         if rule:
@@ -310,8 +316,37 @@ def fix(
 @app.command()
 def config_init():
     """Initialize a default configuration file."""
-    console.print("[yellow]Config init not yet implemented.[/yellow]")
-    console.print("This will create a default pyproject.toml configuration.")
+    # Import only when needed
+    from rich.panel import Panel
+    
+    config_content = '''[tool.docguard]
+exclude = ["**/.venv/**", "**/build/**", "**/node_modules/**"]
+
+[tool.docguard.rules]
+DG101 = "error"    # Missing docstrings
+DG201 = "error"    # Google style parse errors
+DG202 = "error"    # Missing parameters
+DG203 = "error"    # Extra parameters
+DG204 = "warning"  # Returns section issues
+DG205 = "info"     # Raises validation
+DG301 = "warning"  # Summary style
+DG302 = "warning"  # Blank line after summary
+DG211 = "info"     # Yields section validation
+DG212 = "info"     # Attributes section validation
+DG213 = "info"     # Examples section validation
+DG214 = "info"     # Note section validation
+'''
+    
+    config_path = Path("pyproject.toml")
+    if config_path.exists():
+        console.print("[yellow]pyproject.toml already exists. Skipping creation.[/yellow]")
+        return
+    
+    config_path.write_text(config_content)
+    console.print(f"[green]Created default configuration at {config_path}[/green]")
+    
+    # Show the configuration in a nice panel
+    console.print(Panel(config_content, title="Default Configuration", border_style="blue"))
 
 
 if __name__ == "__main__":
