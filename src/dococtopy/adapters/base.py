@@ -14,8 +14,8 @@ Planned language support:
 """
 
 from abc import ABC, abstractmethod
-from typing import List, Optional
 from pathlib import Path
+from typing import List, Optional
 
 # TODO: Define base adapter interface
 # TODO: Add language detection utilities
