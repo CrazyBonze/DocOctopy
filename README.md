@@ -24,6 +24,8 @@ A language-agnostic docstyle compliance & remediation tool that scans code for d
 - **Smart fixing** of non-compliant docstrings
 - **Enhancement** of existing docstrings with missing elements
 - **DSPy integration** for reliable, structured LLM interactions
+- **Interactive review mode** with diff preview and approval workflow
+- **Multiple LLM providers** (OpenAI, Anthropic, Ollama)
 
 ### ⚙️ **Flexible Configuration**
 
@@ -49,9 +51,9 @@ pip install dococtopy[llm]
 ### Development Installation
 
 ```bash
-git clone https://github.com/yourusername/dococtopy.git
-cd dococtopy
-pip install -e .
+git clone https://github.com/CrazyBonze/DocOctopy.git
+cd DocOctopy
+uv sync --group dev
 ```
 
 ## Quick Start
@@ -78,11 +80,17 @@ dococtopy scan . --format sarif --output-file report.sarif
 # Dry-run mode (safe, shows what would be fixed)
 dococtopy fix . --dry-run
 
+# Interactive mode (review each change)
+dococtopy fix . --interactive
+
 # Fix specific rules only
 dococtopy fix . --rule DG101,DG202 --dry-run
 
 # Use different LLM provider
 dococtopy fix . --llm-provider anthropic --llm-model claude-3-haiku-20240307
+
+# Use local Ollama server
+dococtopy fix . --llm-provider ollama --llm-model codeqwen:latest --llm-base-url http://localhost:11434
 ```
 
 ### 3. Configure Your Project
@@ -102,6 +110,148 @@ DG204 = "warning"  # Returns section issues
 DG205 = "info"     # Raises validation
 DG301 = "warning"  # Summary style
 DG302 = "warning"  # Blank line after summary
+DG211 = "info"     # Yields section validation
+DG212 = "info"     # Attributes section validation
+DG213 = "info"     # Examples section validation
+DG214 = "info"     # Note section validation
+```
+
+## How to Get Started
+
+### Step 1: Install DocOctopy
+
+```bash
+# Install with LLM support for automatic fixes
+pip install dococtopy[llm]
+```
+
+### Step 2: Set Up LLM Provider
+
+Choose one of these options:
+
+#### Option A: Local Ollama (Recommended for Development)
+
+1. **Install Ollama**: [Download from ollama.ai](https://ollama.ai)
+2. **Pull a model**:
+
+   ```bash
+   ollama pull codeqwen:latest
+   # or
+   ollama pull llama3.1:8b
+   ```
+
+3. **Test DocOctopy**:
+
+   ```bash
+   dococtopy fix . --llm-provider ollama --llm-model codeqwen:latest --llm-base-url http://localhost:11434 --dry-run
+   ```
+
+#### Option B: OpenAI
+
+1. **Get API key**: [OpenAI API Keys](https://platform.openai.com/api-keys)
+2. **Set environment variable**:
+
+   ```bash
+   export OPENAI_API_KEY="your-api-key"
+   ```
+
+3. **Test DocOctopy**:
+
+   ```bash
+   dococtopy fix . --llm-provider openai --llm-model gpt-4o-mini --dry-run
+   ```
+
+#### Option C: Anthropic
+
+1. **Get API key**: [Anthropic Console](https://console.anthropic.com/)
+2. **Set environment variable**:
+
+   ```bash
+   export ANTHROPIC_API_KEY="your-api-key"
+   ```
+
+3. **Test DocOctopy**:
+
+   ```bash
+   dococtopy fix . --llm-provider anthropic --llm-model claude-3-haiku-20240307 --dry-run
+   ```
+
+### Step 3: Scan Your Project
+
+```bash
+# Basic scan
+dococtopy scan .
+
+# Get detailed report
+dococtopy scan . --format json --output-file docstring-report.json
+```
+
+### Step 4: Fix Issues
+
+```bash
+# See what would be fixed (safe)
+dococtopy fix . --dry-run
+
+# Interactive mode (review each change)
+dococtopy fix . --interactive
+
+# Apply fixes automatically
+dococtopy fix . --llm-provider ollama --llm-model codeqwen:latest
+```
+
+### Step 5: Configure Your Project
+
+Create `pyproject.toml`:
+
+```toml
+[tool.docguard]
+# Exclude common directories
+exclude = ["**/.venv/**", "**/build/**", "**/node_modules/**", "**/tests/**"]
+
+# Configure rule severity
+[tool.docguard.rules]
+DG101 = "error"      # Missing docstrings
+DG201 = "error"      # Google style parse errors
+DG202 = "warning"    # Missing parameters
+DG203 = "warning"    # Extra parameters
+DG204 = "info"       # Returns section issues
+DG205 = "info"       # Raises validation
+DG301 = "warning"    # Summary style
+DG302 = "warning"    # Blank line after summary
+DG211 = "info"       # Yields section validation
+DG212 = "info"       # Attributes section validation
+DG213 = "info"       # Examples section validation
+DG214 = "info"       # Note section validation
+
+# Per-path overrides
+[[tool.docguard.overrides]]
+patterns = ["tests/**"]
+rules.DG101 = "off"  # Disable missing docstrings in tests
+```
+
+### Step 6: Integrate with CI/CD
+
+Create `.github/workflows/docstring-check.yml`:
+
+```yaml
+name: Docstring Compliance
+on: [push, pull_request]
+
+jobs:
+  docstring-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install dococtopy
+      - run: dococtopy scan . --format json --output-file report.json --fail-level error
+      - name: Upload report
+        uses: actions/upload-artifact@v4
+        with:
+          name: docstring-report
+          path: report.json
 ```
 
 ## Rules Reference
@@ -124,6 +274,124 @@ DG302 = "warning"  # Blank line after summary
 - **DG208**: Raises section format validation
 - **DG209**: Summary length validation
 - **DG210**: Docstring indentation consistency
+
+### Advanced Google Style Rules
+
+- **DG211**: Generator functions should have Yields section
+- **DG212**: Classes with public attributes should have Attributes section
+- **DG213**: Complex functions should have Examples section
+- **DG214**: Functions with special behavior should have Note section
+
+## Interactive Fix Mode
+
+DocOctopy includes an interactive mode that lets you review and approve each proposed change:
+
+```bash
+dococtopy fix . --interactive
+```
+
+### Interactive Features
+
+- **Diff preview**: See exactly what will be changed
+- **Change-by-change review**: Accept or reject each fix individually
+- **Rich formatting**: Beautiful console output with colors
+- **Summary statistics**: Track approved vs rejected changes
+
+### Example Interactive Session
+
+```
+Found 3 changes for src/main.py
+
+Change: process_data (function)
+Issues: DG101
+Proposed docstring:
+    """Process the input data and return results.
+
+    Args:
+        data: The input data to process.
+        options: Processing options.
+
+    Returns:
+        Processed data results.
+    """
+Show diff? [Y/n]: y
+--- Original
++++ Proposed
+@@ -15,6 +15,15 @@
+ def process_data(data, options):
++    """Process the input data and return results.
++
++    Args:
++        data: The input data to process.
++        options: Processing options.
++
++    Returns:
++        Processed data results.
++    """
+     result = []
+     for item in data:
+         result.append(transform(item, options))
+Apply this change? [Y/n]: y
+✓ Applied change for process_data
+
+Change: validate_input (function)
+Issues: DG202, DG301
+Proposed docstring:
+    """Validate the input parameters.
+
+    Args:
+        value: The value to validate.
+        min_length: Minimum length requirement.
+
+    Returns:
+        True if valid, False otherwise.
+    """
+Show diff? [Y/n]: n
+Apply this change? [Y/n]: n
+✗ Rejected change for validate_input
+
+Summary:
+- Total changes: 3
+- Applied: 1
+- Rejected: 1
+- Skipped: 1
+```
+
+## Canned Integration Tests
+
+DocOctopy includes a comprehensive testing framework for LLM-powered features:
+
+### Running Canned Tests
+
+```bash
+# Setup configuration (first time)
+python tests/integration/canned/test_runner.py --setup-config
+
+# Run all available scenarios
+python tests/integration/canned/test_runner.py --all
+
+# Run specific scenario
+python tests/integration/canned/test_runner.py --scenario missing_docstrings
+
+# Inspect a scenario (shows before/after)
+python tests/integration/canned/test_runner.py --inspect missing_docstrings
+```
+
+### Available Test Scenarios
+
+1. **Missing Docstrings**: Add docstrings to functions and classes without them
+2. **Malformed Docstrings**: Fix malformed Google-style docstrings
+3. **Mixed Issues**: Handle mixed docstring issues
+4. **Real-World Patterns**: Real-world code patterns from actual projects
+5. **Google Style Patterns**: Advanced Google style compliance scenarios
+
+### Test Framework Features
+
+- **Multiple LLM providers**: Ollama, OpenAI, Anthropic
+- **Automated setup/cleanup**: Copies fixture files, runs tests, cleans up
+- **Result validation**: Checks if tests pass/fail, counts changes
+- **Interactive testing**: Supports interactive mode for manual review
+- **Rich output**: Beautiful console output with colors and tables
 
 ## Configuration
 
@@ -150,6 +418,10 @@ DG207 = "warning"
 DG208 = "warning"
 DG209 = "info"
 DG210 = "warning"
+DG211 = "info"
+DG212 = "info"
+DG213 = "info"
+DG214 = "info"
 DG301 = "warning"
 DG302 = "warning"
 
@@ -201,12 +473,13 @@ Fix documentation issues using LLM assistance.
 dococtopy fix [PATHS...] [OPTIONS]
 
 Options:
-  --dry-run                         Show changes without applying [default: True]
+  --dry-run                         Show changes without applying [default: False]
   --interactive                     Accept/reject each fix interactively
   --rule TEXT                       Comma-separated rule IDs to fix
   --max-changes INTEGER             Maximum number of changes
   --llm-provider {openai,anthropic,ollama}  LLM provider [default: openai]
   --llm-model TEXT                  LLM model to use [default: gpt-4o-mini]
+  --llm-base-url TEXT               Base URL for LLM provider (for Ollama, etc.)
   --config PATH                     Config file path
 ```
 
@@ -265,7 +538,39 @@ dococtopy fix . --dry-run
 # Run without --dry-run to apply changes
 ```
 
-### Example 3: CI/CD Integration
+### Example 3: Interactive Fix Mode
+
+```bash
+# Interactive mode with diff preview
+dococtopy fix . --interactive
+
+# Output:
+# Found 3 changes for src/main.py
+# 
+# Change: process_data (function)
+# Issues: DG101
+# Show diff? [Y/n]: y
+# --- Original
+# +++ Proposed
+# @@ -15,6 +15,15 @@
+#  def process_data(data, options):
+# +    """Process the input data and return results.
+# +
+# +    Args:
+# +        data: The input data to process.
+# +        options: Processing options.
+# +
+# +    Returns:
+# +        Processed data results.
+# +    """
+#      result = []
+#      for item in data:
+#          result.append(transform(item, options))
+# Apply this change? [Y/n]: y
+# ✓ Applied change for process_data
+```
+
+### Example 4: CI/CD Integration
 
 ```yaml
 # .github/workflows/docstring-check.yml
@@ -310,6 +615,7 @@ dococtopy/
 - **Rule Engine**: Applies compliance rules with configurable severity
 - **Remediation Engine**: Uses DSPy for structured LLM interactions
 - **Caching System**: Incremental scanning with fingerprint-based invalidation
+- **Interactive Reviewer**: Handles interactive fix workflows with diff preview
 
 ## Publishing
 
@@ -321,10 +627,10 @@ DocOctopy is automatically published to PyPI via GitHub Actions when a release i
 2. **Build and test** the package:
 
    ```bash
-   ./scripts/publish.sh
+   uv build
    ```
 
-3. **Create a GitHub release** with tag `v0.1.0` (matching the version)
+3. **Create a GitHub release** with tag `v0.1.2` (matching the version)
 4. **GitHub Action** will automatically publish to PyPI
 
 ### PyPI Setup (one-time)
@@ -335,8 +641,8 @@ To enable automatic publishing, configure trusted publishing in PyPI:
 2. Navigate to "Publishing" → "Publishing tokens" → "Add a new pending publisher"
 3. Configure:
    - **PyPI project name**: `dococtopy`
-   - **Owner**: `yourusername` (your GitHub username)
-   - **Repository name**: `dococtopy`
+   - **Owner**: `CrazyBonze` (your GitHub username)
+   - **Repository name**: `DocOctopy`
    - **Workflow filename**: `publish.yml`
    - **Environment name**: (leave empty)
 
@@ -347,9 +653,9 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 ### Development Setup
 
 ```bash
-git clone https://github.com/yourusername/dococtopy.git
-cd dococtopy
-uv sync --dev
+git clone https://github.com/CrazyBonze/DocOctopy.git
+cd DocOctopy
+uv sync --group dev
 uv run pytest
 ```
 
@@ -377,14 +683,17 @@ uv run pytest
 - ✅ Multiple output formats
 - ✅ Configuration system
 - ✅ Caching and incremental scanning
+- ✅ Interactive fix workflows
+- ✅ File writing capabilities
+- ✅ Advanced Google style rules (DG211-DG214)
+- ✅ Canned integration tests
 
 ### V1 (Next)
 
-- 🔄 Interactive fix workflows
-- 🔄 File writing capabilities
 - 🔄 GitHub Action and pre-commit hooks
 - 🔄 Playground UI for prompt experimentation
 - 🔄 Additional Python rules (coverage thresholds, etc.)
+- 🔄 Batch processing for large codebases
 
 ### Future
 
