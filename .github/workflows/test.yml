@@ -32,7 +32,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        uv sync --dev
+        uv sync --group dev
         uv run python -c "import sys; print(f'Python {sys.version}')"
         uv run python -c "import dococtopy; print('DocOctopy imported successfully')"
 
