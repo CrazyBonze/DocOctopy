@@ -1,0 +1,29 @@
+{
+    "ollama": {
+        "base_url": "http://192.168.0.132:11434",
+        "default_model": "codeqwen:latest",
+        "models": {
+            "codeqwen": "codeqwen:latest",
+            "llama": "llama3.1:8b",
+            "codellama": "codellama:7b"
+        }
+    },
+    "openai": {
+        "api_key": "your-openai-api-key-here",
+        "default_model": "gpt-4o-mini",
+        "models": {
+            "gpt4_mini": "gpt-4o-mini",
+            "gpt4": "gpt-4o",
+            "gpt35": "gpt-3.5-turbo"
+        }
+    },
+    "anthropic": {
+        "api_key": "your-anthropic-api-key-here",
+        "default_model": "claude-3-haiku-20240307",
+        "models": {
+            "haiku": "claude-3-haiku-20240307",
+            "sonnet": "claude-3-sonnet-20240229",
+            "opus": "claude-3-opus-20240229"
+        }
+    }
+}

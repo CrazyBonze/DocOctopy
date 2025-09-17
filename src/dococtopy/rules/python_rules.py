@@ -620,6 +620,272 @@ class DG210DocstringIndentation:
         return findings
 
 
+@dataclass
+class DG211YieldsSectionValidation:
+    """Check that generator functions have proper Yields section."""
+
+    id: str = "DG211"
+    name: str = "Generator functions should have Yields section"
+    level_default: str = "warning"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if sym.kind != "function" or not sym.docstring:
+                continue
+
+            # Check if function is a generator (has yield statements)
+            if not self._is_generator_function(sym):
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+
+                # Check if Yields section exists
+                has_yields = any(
+                    meta.args[0] == "yields"
+                    for meta in parsed.meta
+                    if meta.args and len(meta.args) > 0
+                )
+
+                if not has_yields:
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.WARNING,
+                            message="Generator function should have Yields section",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+            except Exception:
+                # Skip if docstring parsing fails (handled by DG201)
+                continue
+        return findings
+
+    def _is_generator_function(self, sym: PythonSymbol) -> bool:
+        """Check if function contains yield statements."""
+        if not hasattr(sym, "ast_node") or not isinstance(
+            sym.ast_node, ast.FunctionDef
+        ):
+            return False
+
+        # Walk the entire AST tree to find yield statements
+        for node in ast.walk(sym.ast_node):
+            if isinstance(node, ast.Yield):
+                return True
+        return False
+
+
+@dataclass
+class DG212AttributesSectionValidation:
+    """Check that classes with attributes document them properly."""
+
+    id: str = "DG212"
+    name: str = "Classes should document public attributes"
+    level_default: str = "warning"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if sym.kind != "class" or not sym.docstring:
+                continue
+
+            # Get public attributes from the class
+            public_attrs = self._get_public_attributes(sym)
+            if not public_attrs:
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+
+                # Check if Attributes section exists in the raw docstring
+                has_attributes = False
+                if sym.docstring:
+                    # Look for Attributes: or Attributes - patterns in the raw docstring
+                    docstring_lower = sym.docstring.lower()
+                    has_attributes = any(
+                        pattern in docstring_lower
+                        for pattern in [
+                            "attributes:",
+                            "attributes -",
+                            "attributes\n",
+                            "attributes ",
+                        ]
+                    )
+
+                if not has_attributes:
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.WARNING,
+                            message="Class with public attributes should have Attributes section",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+            except Exception:
+                # Skip if docstring parsing fails (handled by DG201)
+                continue
+        return findings
+
+    def _get_public_attributes(self, sym: PythonSymbol) -> List[str]:
+        """Get public attributes from class definition."""
+        if not hasattr(sym, "ast_node") or not isinstance(sym.ast_node, ast.ClassDef):
+            return []
+
+        attrs = []
+        # Look for assignments in the entire class AST tree
+        for node in ast.walk(sym.ast_node):
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Attribute):
+                        # Check if it's a self.attr assignment (public attribute)
+                        if (
+                            isinstance(target.value, ast.Name)
+                            and target.value.id == "self"
+                        ):
+                            if not target.attr.startswith("_"):
+                                attrs.append(target.attr)
+        return attrs
+
+
+@dataclass
+class DG213ExamplesSectionValidation:
+    """Check that complex functions have Examples section."""
+
+    id: str = "DG213"
+    name: str = "Complex functions should have Examples section"
+    level_default: str = "info"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if sym.kind != "function" or not sym.docstring:
+                continue
+
+            # Check if function is complex enough to warrant examples
+            if not self._is_complex_function(sym):
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+
+                # Check if Examples section exists
+                if not parsed.examples:
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.INFO,
+                            message="Complex function should have Examples section",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+            except Exception:
+                # Skip if docstring parsing fails (handled by DG201)
+                continue
+        return findings
+
+    def _is_complex_function(self, sym: PythonSymbol) -> bool:
+        """Check if function is complex enough to warrant examples."""
+        if not hasattr(sym, "ast_node") or not isinstance(
+            sym.ast_node, ast.FunctionDef
+        ):
+            return False
+
+        # Consider complex if it has more than 3 parameters or more than 20 lines
+        param_count = len(sym.ast_node.args.args)
+        line_count = (
+            sym.ast_node.end_lineno - sym.ast_node.lineno
+            if sym.ast_node.end_lineno
+            else 0
+        )
+
+        return param_count > 3 or line_count > 20
+
+
+@dataclass
+class DG214NoteSectionValidation:
+    """Check that functions with special behavior have Note sections."""
+
+    id: str = "DG214"
+    name: str = "Functions with special behavior should have Note sections"
+    level_default: str = "info"
+
+    def check(self, *, symbols: List[PythonSymbol]) -> List[Finding]:
+        findings: List[Finding] = []
+        if parse is None or DocstringStyle is None:
+            return findings
+
+        for sym in symbols:
+            if sym.kind != "function" or not sym.docstring:
+                continue
+
+            # Check if function has special behavior that should be noted
+            if not self._has_special_behavior(sym):
+                continue
+
+            try:
+                parsed = parse(sym.docstring, style=DocstringStyle.GOOGLE)
+
+                # Check if Note section exists in the raw docstring
+                has_note = False
+                if sym.docstring:
+                    # Look for Note: or Note - patterns in the raw docstring
+                    docstring_lower = sym.docstring.lower()
+                    has_note = any(
+                        pattern in docstring_lower
+                        for pattern in ["note:", "note -", "note\n", "note "]
+                    )
+
+                if not has_note:
+                    findings.append(
+                        Finding(  # type: ignore[call-arg]
+                            rule_id=self.id,
+                            level=FindingLevel.INFO,
+                            message="Function with special behavior should have Note section",
+                            symbol=sym.name,
+                            location=Location(line=sym.lineno, column=sym.col),
+                        )
+                    )
+            except Exception:
+                # Skip if docstring parsing fails (handled by DG201)
+                continue
+        return findings
+
+    def _has_special_behavior(self, sym: PythonSymbol) -> bool:
+        """Check if function has special behavior that should be noted."""
+        if not hasattr(sym, "ast_node") or not isinstance(
+            sym.ast_node, ast.FunctionDef
+        ):
+            return False
+
+        # Check for special patterns
+        for node in ast.walk(sym.ast_node):
+            # Check for *args or **kwargs
+            if isinstance(node, ast.FunctionDef):
+                if node.args.vararg or node.args.kwarg:
+                    return True
+            # Check for decorators
+            if isinstance(node, ast.FunctionDef) and node.decorator_list:
+                return True
+            # Check for complex control flow
+            if isinstance(node, (ast.For, ast.While, ast.If)) and len(node.body) > 5:
+                return True
+
+        return False
+
+
 # Auto-register for MVP
 register(DG101MissingDocstring())
 register(DG301SummaryStyle())
@@ -634,3 +900,7 @@ register(DG207ReturnsSectionFormat())
 register(DG208RaisesSectionFormat())
 register(DG209SummaryLength())
 register(DG210DocstringIndentation())
+register(DG211YieldsSectionValidation())
+register(DG212AttributesSectionValidation())
+register(DG213ExamplesSectionValidation())
+register(DG214NoteSectionValidation())

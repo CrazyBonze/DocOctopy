@@ -17,6 +17,10 @@ class DocstringGeneration(dspy.Signature if dspy else object):  # type: ignore
 
     This signature defines the contract for generating compliant docstrings
     based on function/class signatures and context.
+
+    Examples:
+    - Input: function_signature="def add(a, b):", function_purpose="Add two numbers"
+    - Output: docstring="Add two numbers.\n\nArgs:\n    a: First number\n    b: Second number\n\nReturns:\n    Sum of a and b"
     """
 
     function_signature: str = dspy.InputField(  # type: ignore
@@ -33,7 +37,7 @@ class DocstringGeneration(dspy.Signature if dspy else object):  # type: ignore
     )
 
     docstring: str = dspy.OutputField(  # type: ignore
-        desc="Generated Google-style docstring following the format: summary, blank line, Args section (if applicable), Returns section (if applicable), Raises section (if applicable)"
+        desc="ONLY the docstring content without triple quotes or function signature. Example: 'Add two numbers.\\n\\nArgs:\\n    a: First number\\n    b: Second number\\n\\nReturns:\\n    Sum of a and b'"
     )
 
 
@@ -55,7 +59,7 @@ class DocstringFix(dspy.Signature if dspy else object):  # type: ignore
     )
 
     fixed_docstring: str = dspy.OutputField(  # type: ignore
-        desc="Corrected Google-style docstring that addresses all compliance issues"
+        desc="Corrected Google-style docstring content ONLY (without triple quotes) that addresses all compliance issues"
     )
 
 
@@ -77,7 +81,7 @@ class DocstringEnhancement(dspy.Signature if dspy else object):  # type: ignore
     )
 
     enhanced_docstring: str = dspy.OutputField(  # type: ignore
-        desc="Enhanced docstring with all missing elements added in Google style"
+        desc="Enhanced docstring content ONLY (without triple quotes) with all missing elements added in Google style"
     )
 
 

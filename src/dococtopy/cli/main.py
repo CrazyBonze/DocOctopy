@@ -2,6 +2,7 @@
 Main CLI entry point for DocOctopy.
 """
 
+import os
 from pathlib import Path
 from typing import List, Optional, Set
 
@@ -125,7 +126,7 @@ def fix(
         ..., help="Paths to fix documentation issues in.", exists=True
     ),
     dry_run: bool = typer.Option(
-        True, "--dry-run", help="Show what would be fixed without making changes."
+        False, "--dry-run", help="Show what would be fixed without making changes."
     ),
     interactive: bool = typer.Option(
         False, "--interactive", help="Interactively accept/reject each fix."
@@ -144,6 +145,9 @@ def fix(
     llm_model: str = typer.Option(
         "gpt-4o-mini", "--llm-model", help="LLM model to use."
     ),
+    llm_base_url: Optional[str] = typer.Option(
+        None, "--llm-base-url", help="Base URL for LLM provider (for Ollama, etc.)."
+    ),
     config: Optional[Path] = typer.Option(
         None, "--config", help="Path to config file (default: pyproject.toml)"
     ),
@@ -159,7 +163,15 @@ def fix(
         llm_config = LLMConfig(
             provider=llm_provider,
             model=llm_model,
+            base_url=llm_base_url,
         )
+
+        # Get API key from environment variables
+        if not llm_config.api_key and llm_provider in ["openai", "anthropic"]:
+            if llm_provider == "openai":
+                llm_config.api_key = os.getenv("OPENAI_API_KEY")
+            elif llm_provider == "anthropic":
+                llm_config.api_key = os.getenv("ANTHROPIC_API_KEY")
 
         # Create remediation options
         options = RemediationOptions(
@@ -190,7 +202,7 @@ def fix(
             if not file_result.findings:
                 continue
 
-            console.print(f"[blue]Processing {file_result.path}...[/blue]")
+            console.print(f"\n[blue]Processing {file_result.path}...[/blue]")
 
             # Load symbols for this file
             from dococtopy.adapters.python.adapter import load_symbols_from_file
@@ -205,24 +217,76 @@ def fix(
             )
 
             if changes:
-                total_changes += len(changes)
                 console.print(
                     f"[green]Found {len(changes)} changes for {file_result.path}[/green]"
                 )
 
-                # Show changes
-                for change in changes:
-                    console.print(
-                        f"\n[cyan]Change: {change.symbol_name} ({change.symbol_kind})[/cyan]"
-                    )
-                    console.print(
-                        f"[yellow]Issues: {', '.join(change.issues_addressed)}[/yellow]"
+                if interactive:
+                    # Use interactive reviewer
+                    from dococtopy.remediation.interactive import (
+                        InteractiveReviewer,
+                        InteractiveReviewOptions,
                     )
 
-                    if dry_run:
-                        console.print("[dim]Dry run - no changes applied[/dim]")
-                    else:
-                        console.print("[green]Applied fix[/green]")
+                    # Read original file content
+                    original_content = file_result.path.read_text(encoding="utf-8")
+
+                    # Create interactive reviewer
+                    review_options = InteractiveReviewOptions(
+                        show_full_context=True,
+                        auto_accept_safe_changes=False,
+                        batch_mode=False,
+                        preview_mode=True,
+                    )
+                    reviewer = InteractiveReviewer(console, review_options)
+
+                    # Review changes
+                    approved_changes = reviewer.review_changes(
+                        changes, file_result.path, original_content
+                    )
+
+                    # Apply approved changes
+                    if approved_changes and not dry_run:
+                        # Apply changes to file
+                        engine.apply_changes(file_result.path, approved_changes)
+                        total_changes += len(approved_changes)
+                        console.print(
+                            f"[green]Applied {len(approved_changes)} changes[/green]"
+                        )
+                    elif approved_changes and dry_run:
+                        total_changes += len(approved_changes)
+                        console.print(
+                            f"[yellow]Would apply {len(approved_changes)} changes (dry run)[/yellow]"
+                        )
+
+                    # Show review summary
+                    reviewer.show_summary()
+                else:
+                    # Non-interactive mode
+                    if changes and not dry_run:
+                        # Apply changes to file
+                        engine.apply_changes(file_result.path, changes)
+                        total_changes += len(changes)
+                        console.print(f"[green]Applied {len(changes)} changes[/green]")
+                    elif changes and dry_run:
+                        total_changes += len(changes)
+                        console.print(
+                            f"[yellow]Would apply {len(changes)} changes (dry run)[/yellow]"
+                        )
+
+                    # Show changes
+                    for change in changes:
+                        console.print(
+                            f"\n[cyan]Change: {change.symbol_name} ({change.symbol_kind})[/cyan]"
+                        )
+                        console.print(
+                            f"[yellow]Issues: {', '.join(change.issues_addressed)}[/yellow]"
+                        )
+
+                        if dry_run:
+                            console.print("[dim]Dry run - no changes applied[/dim]")
+                        else:
+                            console.print("[green]Applied fix[/green]")
 
         # Show summary
         if total_changes > 0:

@@ -198,6 +198,100 @@ class RemediationEngine:
         """Get all tracked changes."""
         return self.change_tracker.changes.copy()
 
+    def apply_changes(self, file_path: Path, changes: List[DocstringChange]) -> None:
+        """Apply approved changes to a file."""
+        if not changes:
+            return
+
+        # Read original file content
+        original_content = file_path.read_text(encoding="utf-8")
+        lines = original_content.splitlines()
+
+        # Sort changes by line number (descending) to avoid line number shifts
+        sorted_changes = sorted(changes, key=lambda c: c.line_number, reverse=True)
+
+        for change in sorted_changes:
+            # Find the symbol's line range
+            symbol_line = change.line_number - 1  # Convert to 0-based
+
+            if (
+                change.original_docstring is None or change.original_docstring == ""
+            ) and change.new_docstring:
+                # Add docstring
+                indent = "    "  # Default indentation
+                docstring_lines = change.new_docstring.splitlines()
+
+                # Create docstring content
+                docstring_content = f'{indent}"""{docstring_lines[0]}'
+                for line in docstring_lines[1:]:
+                    docstring_content += f"\n{indent}{line}"
+                docstring_content += f'\n{indent}"""'
+
+                # Insert after function/class definition (line 3 -> index 2)
+                # Insert at symbol_line + 1 (after the definition line)
+                lines.insert(symbol_line + 1, docstring_content + "\n")
+
+            elif change.original_docstring and change.new_docstring:
+                # Replace docstring
+                # Find the docstring lines
+                start_line = symbol_line
+                end_line = start_line
+
+                # Look for the docstring
+                for i in range(symbol_line, len(lines)):
+                    line = lines[i]
+                    if '"""' in line:
+                        # Found start of docstring
+                        start_line = i
+                        # Find end of docstring
+                        for j in range(i + 1, len(lines)):
+                            if '"""' in lines[j]:
+                                end_line = j
+                                break
+                        break
+
+                # Replace the docstring
+                if start_line != end_line:
+                    # Multi-line docstring
+                    indent = len(lines[start_line]) - len(lines[start_line].lstrip())
+                    new_docstring_lines = change.new_docstring.splitlines()
+
+                    # Replace first line
+                    lines[start_line] = f'{" " * indent}"""{new_docstring_lines[0]}'
+
+                    # Replace middle lines
+                    for i, line in enumerate(new_docstring_lines[1:], 1):
+                        if start_line + i <= end_line:
+                            lines[start_line + i] = f'{" " * indent}{line}'
+                        else:
+                            lines.insert(start_line + i, f'{" " * indent}{line}')
+
+                    # Replace last line
+                    if start_line + len(new_docstring_lines) <= end_line:
+                        lines[start_line + len(new_docstring_lines)] = (
+                            f'{" " * indent}"""'
+                        )
+                    else:
+                        lines.insert(
+                            start_line + len(new_docstring_lines), f'{" " * indent}"""'
+                        )
+
+                    # Remove any remaining old docstring lines
+                    if start_line + len(new_docstring_lines) + 1 <= end_line:
+                        del lines[
+                            start_line + len(new_docstring_lines) + 1 : end_line + 1
+                        ]
+                else:
+                    # Single line docstring
+                    indent = len(lines[start_line]) - len(lines[start_line].lstrip())
+                    lines[start_line] = f'{" " * indent}"""{change.new_docstring}"""'
+
+        # Write updated content
+        updated_content = "\n".join(lines)
+        if original_content.endswith("\n"):
+            updated_content += "\n"
+        file_path.write_text(updated_content, encoding="utf-8")
+
     def clear_changes(self) -> None:
         """Clear all tracked changes."""
         self.change_tracker.clear()

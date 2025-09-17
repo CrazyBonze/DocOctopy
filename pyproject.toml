@@ -36,6 +36,7 @@ dependencies = [
     "rich>=14.1.0",
     "typer>=0.16.1",
     "tomli>=2.0.0; python_version < '3.11'",
+    "dspy-ai>=3.0.3",
 ]
 
 [project.optional-dependencies]

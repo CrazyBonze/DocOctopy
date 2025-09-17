@@ -197,11 +197,18 @@ def test_remediation_options() -> None:
 
 def test_remediation_engine_initialization() -> None:
     """Test remediation engine initialization."""
+    from unittest.mock import patch
+
     options = RemediationOptions(dry_run=True)
 
-    # This will fail without DSPy, but we can test the structure
-    with pytest.raises(ImportError):
-        RemediationEngine(options)
+    # Mock the LLM client creation to avoid API key requirement
+    with patch("dococtopy.remediation.engine.create_llm_client") as mock_create_client:
+        mock_client = mock_create_client.return_value
+
+        # With DSPy installed, this should work
+        engine = RemediationEngine(options)
+        assert engine.options == options
+        assert engine.llm_client == mock_client
 
 
 def test_prompt_builder_edge_cases() -> None:

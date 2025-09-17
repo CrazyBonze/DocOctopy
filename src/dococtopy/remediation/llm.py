@@ -86,7 +86,7 @@ class DSPyLLMClient(LLMClient):
                     "OpenAI API key required. Set OPENAI_API_KEY environment variable or pass api_key."
                 )
 
-            self.lm = dspy.OpenAI(  # type: ignore
+            self.lm = dspy.LM(  # type: ignore
                 model=self.config.model,
                 api_key=api_key,
                 temperature=self.config.temperature,
@@ -99,16 +99,23 @@ class DSPyLLMClient(LLMClient):
                     "Anthropic API key required. Set ANTHROPIC_API_KEY environment variable or pass api_key."
                 )
 
-            self.lm = dspy.Claude(  # type: ignore
+            self.lm = dspy.LM(  # type: ignore
                 model=self.config.model,
                 api_key=api_key,
                 temperature=self.config.temperature,
                 max_tokens=self.config.max_tokens,
             )
         elif self.config.provider == "ollama":
-            self.lm = dspy.OllamaLocal(  # type: ignore
-                model=self.config.model,
-                base_url=self.config.base_url or "http://localhost:11434",
+            # Use litellm for Ollama support
+            import litellm
+
+            # Configure litellm for Ollama
+            litellm.api_base = self.config.base_url or "http://localhost:11434"
+
+            self.lm = dspy.LM(  # type: ignore
+                model=f"ollama/{self.config.model}",
+                temperature=self.config.temperature,
+                max_tokens=self.config.max_tokens,
             )
         else:
             raise ValueError(f"Unsupported provider: {self.config.provider}")
@@ -202,3 +209,30 @@ def get_default_config() -> LLMConfig:
             provider="ollama",
             model="llama3.1:8b",  # Good balance of quality and speed
         )
+
+
+def get_recommended_models() -> Dict[str, List[str]]:
+    """Get recommended models for different use cases."""
+    return {
+        "free_tier": [
+            "gpt-4o-mini",  # OpenAI free tier
+            "claude-3-haiku-20240307",  # Anthropic free tier
+            "llama3.1:8b",  # Local Ollama
+        ],
+        "fast": [
+            "gpt-4o-mini",
+            "claude-3-haiku-20240307",
+            "llama3.1:8b",
+        ],
+        "high_quality": [
+            "gpt-4o",
+            "claude-3-sonnet-20240229",
+            "llama3.1:70b",
+        ],
+        "local_only": [
+            "llama3.1:8b",
+            "llama3.1:70b",
+            "codellama:7b",
+            "codellama:13b",
+        ],
+    }
