@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "dococtopy"
-version = "0.1.1"
+version = "0.1.2"
 description = "A language-agnostic docstyle compliance & remediation tool"
 readme = "README.md"
 license = { text = "MIT" }
