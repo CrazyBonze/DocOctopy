@@ -675,12 +675,14 @@ uv run task pre-commit:run
 ```
 
 **Pre-commit checks include:**
+
 - **Black**: Code formatting
 - **isort**: Import sorting
 - **MyPy**: Type checking
 - **Pytest**: Fast test suite
 
 **Available tasks:**
+
 ```bash
 uv run task format          # Format code
 uv run task lint            # Run linting

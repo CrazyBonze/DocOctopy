@@ -191,11 +191,11 @@ def fix(
             llm_config=llm_config,
         )
 
-        # Create remediation engine
-        engine = RemediationEngine(options)
-
         # Load configuration
         cfg = load_config(config)
+
+        # Create remediation engine with config
+        engine = RemediationEngine(options, config=cfg)
 
         # Scan for issues
         console.print("[blue]Scanning for documentation issues...[/blue]")

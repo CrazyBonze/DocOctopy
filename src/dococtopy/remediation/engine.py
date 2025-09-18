@@ -16,6 +16,11 @@ from dococtopy.core.findings import Finding, FindingLevel
 from dococtopy.remediation.diff import ChangeTracker, DiffGenerator, DocstringChange
 from dococtopy.remediation.llm import LLMClient, LLMConfig, create_llm_client
 from dococtopy.remediation.prompts import FunctionContext, PromptBuilder
+from dococtopy.remediation.validation import (
+    DocstringFixer,
+    DocstringValidator,
+    TrivialFixDetector,
+)
 
 
 @dataclass
@@ -32,8 +37,9 @@ class RemediationOptions:
 class RemediationEngine:
     """Main engine for docstring remediation."""
 
-    def __init__(self, options: RemediationOptions):
+    def __init__(self, options: RemediationOptions, config=None):
         self.options = options
+        self.config = config
         self.llm_client = create_llm_client(
             options.llm_config
             or LLMConfig(
@@ -43,13 +49,18 @@ class RemediationEngine:
         )
         self.change_tracker = ChangeTracker()
 
+        # Initialize validation components
+        self.validator = DocstringValidator(config)
+        self.trivial_detector = TrivialFixDetector()
+        self.docstring_fixer = DocstringFixer(self.validator, self.trivial_detector)
+
     def remediate_symbol(
         self,
         symbol: PythonSymbol,
         findings: List[Finding],
         file_path: Path,
     ) -> Optional[DocstringChange]:
-        """Remediate a single symbol's docstring."""
+        """Remediate a single symbol's docstring with validation and retry logic."""
         # Filter findings for this symbol
         symbol_findings = [f for f in findings if f.symbol == symbol.name]
         if not symbol_findings:
@@ -63,25 +74,25 @@ class RemediationEngine:
             if not symbol_findings:
                 return None
 
-        # Build function context
-        context = PromptBuilder.build_function_context(symbol)
-
-        # Determine remediation strategy
-        if not symbol.docstring:
-            # Generate new docstring
-            new_docstring = self._generate_new_docstring(context, symbol_findings)
-            change_type = "added"
-        else:
-            # Fix existing docstring
-            new_docstring = self._fix_existing_docstring(
-                context, symbol.docstring, symbol_findings
+        # Use the new validation-based fixer
+        try:
+            new_docstring, applied_fixes, used_llm = self.docstring_fixer.fix_docstring(
+                symbol=symbol,
+                original_findings=symbol_findings,
+                llm_client=self.llm_client,
+                file_path=file_path,
             )
-            change_type = "modified"
+        except Exception as e:
+            print(f"Warning: Failed to fix docstring for {symbol.name}: {e}")
+            return None
 
         if new_docstring == symbol.docstring:
             return None  # No change needed
 
-        # Create change record
+        # Determine change type
+        change_type = "added" if not symbol.docstring else "modified"
+
+        # Create change record with additional metadata
         change = DocstringChange(
             symbol_name=symbol.name,
             symbol_kind=symbol.kind,
@@ -92,6 +103,14 @@ class RemediationEngine:
             change_type=change_type,
             issues_addressed=[f.rule_id for f in symbol_findings],
         )
+
+        # Add metadata about fixes applied
+        if hasattr(change, "metadata"):
+            change.metadata = {
+                "applied_fixes": applied_fixes,
+                "used_llm": used_llm,
+                "fix_count": len(applied_fixes),
+            }
 
         return change
 
